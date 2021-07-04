@@ -2,10 +2,12 @@ module.exports = function(app){
 
 // app index
 app.route('/').get((req,res)=>{
-    res.render('index',
+    res.render('login',
         {
             layout : 'layouts/main-layouts',
-            title:"index"
+            title:"Selamat Datang",
+            style : "login",
+            script : null
         });
 })
 
