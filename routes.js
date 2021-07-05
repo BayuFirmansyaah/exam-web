@@ -7,7 +7,7 @@ app.route('/').get((req,res)=>{
             layout : 'layouts/main-layouts',
             title:"Selamat Datang",
             style : "login",
-            script : null
+            script : "login"
         });
 })
 
