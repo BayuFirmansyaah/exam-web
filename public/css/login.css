@@ -1,19 +1,22 @@
-/* mobile phone view*/
+/* all media */
 .wrap-login{
     box-shadow: 0px 0px 6px rgba(0, 0,0,.7);
     width: 100%;
-    height: 200px;
+    min-height: 340px;
     border-radius: 13px;
+    margin-top:25%;
+    padding: 30px 20px;
 }
 
 .title-login{
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .wrap-input{
     width: 100%;
     min-height: 60px;
-    margin: 15px 0px;
+    margin: 30px 0px;
     position: relative;
 }
 
@@ -69,13 +72,50 @@ button{
     font-size: 18px;
     border: none;
     outline: none;
+    position: absolute;
+    margin-top: -70px;
+    width: 90%;
+    left: 5%;
+}
+
+/* mobile phone view*/
+@media(max-width:600px){
+    .wrap-login{
+        position: fixed;
+        top:0;
+        bottom: 0; 
+        left: 0;
+        right: 0;
+        width:100%;
+        height: 100%;
+        border-radius: 0;
+        padding:30px 15px;
+        margin-top: 0px;
+    }
+
+    .title-login{
+        margin:15px 0px;
+        margin-bottom: 45px;
+    }
+
+    .wrap-input{
+        margin: 30px 0px;
+    }
+
+    button{
+        position: fixed;
+        bottom: 45px;
+        left: 3.5%;
+        right: 2%;
+        width: 93%;
+    }
 }
 
 /* dekstop view */
 @media(min-width:992px){
     .wrap-login{
-        height: 370px;
-        margin-top:135px;
+        min-height: 370px;
+        margin-top::25
         padding: 30px;
         position: relative;
     }
@@ -102,7 +142,7 @@ button{
         margin-top: -85px;
         font-size: 20px;
         width: 85%;
-        margin-left: 5%;
+        margin-left: 2.5%;
     }
 
 }
