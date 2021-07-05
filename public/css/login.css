@@ -115,7 +115,7 @@ button{
 @media(min-width:992px){
     .wrap-login{
         min-height: 370px;
-        margin-top::25
+        margin-top:25;
         padding: 30px;
         position: relative;
     }
